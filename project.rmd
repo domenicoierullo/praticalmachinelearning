@@ -77,7 +77,7 @@ The plot shows that there is not a high correlation between predictors,so there 
 
 After this analisys we build the model, 
 
-```{r }
+```{r}
 model <- randomForest(classe ~ ., data = xtrain)
 model
 ```
@@ -88,7 +88,7 @@ The model summary show OOB estimate of  error rate is 0.66%, acceptable rate.
 Using the 40% remaining data, make a crossvalidation for the model and show the confusion matrix to know prediction accuracy
 
 
-```{r }
+```{r}
 CrossVal <- predict(model, xtest)
 confusionMatrix(xtest$classe, CrossVal)
 ```
