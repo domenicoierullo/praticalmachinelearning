@@ -69,10 +69,10 @@ For this classification problem, random forest model was selected, after observi
 
 ```{r }
 correlationMatrix <- cor(xtrain[, -length(xtrain)])
-corrplot(correlationMatrix, order = "hclust", addrect = 3, method = "circle" , type = "lower", tl.cex = 0.8 ,  tl.col = rgb(0, 0, 0))
+corrplot(correlationMatrix, order = "hclust", addrect = 3, method = "circle" , type = "lower", tl.cex = 0.6 ,  tl.col = rgb(0, 0, 0))
 ```
 
-The plot shows that there is not a high collerazione between predictors,so there is no need for a further analysis to reduce the number of predictors, so you do not have a overfitttng.
+The plot shows that there is not a high correlation between predictors,so there is no need for a further analysis to reduce the number of predictors, so you do not have an overfitttng.
 
 
 After this analisys we build the model, 
